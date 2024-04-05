@@ -12,6 +12,6 @@ export class ColoredPoint extends Point {
    * @returns information about the colored point
    */
   getInfo(): string {
-    return ""; // TODO : must get the info from point and add the color
+    return super.getInfo() + " color " + this.color;
   }
 }
