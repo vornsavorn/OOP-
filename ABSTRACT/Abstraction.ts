@@ -8,10 +8,19 @@ abstract class Animal {
     }
 
     abstract playSound (sound: string): void;
+    abstract eat(fruit: string): string;
 }
 
 class Dog extends Animal {
     constructor(name: string) {
         super(name);
     }
+    playSound(sound: string): void {
+        console.log(sound);
+        
+    }
+    eat(fruit: string): string {
+        return " Dog eat " + fruit;
+    }
+
 }
